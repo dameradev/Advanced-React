@@ -8,10 +8,10 @@ export const cloudinary = {
   cloudName: process.env.CLOUDINARY_CLOUD_NAME,
   apiKey: process.env.CLOUDINARY_KEY,
   apiSecret: process.env.CLOUDINARY_SECRET,
-  folder: 'sickfits',
+  folder: 'Aladinko',
 };
 
-export const ProductImage = list({
+export const CarpetImage = list({
   access: {
     create: isSignedIn,
     read: () => true,
@@ -24,7 +24,7 @@ export const ProductImage = list({
       label: 'Source',
     }),
     altText: text(),
-    product: relationship({ ref: 'Product.photo' }),
+    carpet: relationship({ ref: 'Carpet.photo' }),
   },
   ui: {
     listView: {

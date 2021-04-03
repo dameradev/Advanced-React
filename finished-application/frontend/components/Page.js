@@ -4,8 +4,7 @@ import Header from './Header';
 
 const GlobalStyles = createGlobalStyle`
   @font-face {
-    font-family: 'radnika_next';
-    src: url('/static/radnikanext-medium-webfont.woff2') format('woff2');
+    font-family: 'Sans';
     font-weight: normal;
     font-style: normal;
   }

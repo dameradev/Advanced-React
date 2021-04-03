@@ -6,11 +6,8 @@ import {
 } from '@keystone-next/keystone/session';
 import { permissionsList } from './schemas/fields';
 import { Role } from './schemas/Role';
-import { OrderItem } from './schemas/OrderItem';
-import { Order } from './schemas/Order';
-import { CartItem } from './schemas/CartItem';
-import { ProductImage } from './schemas/ProductImage';
-import { Product } from './schemas/Product';
+import { Carpet } from './schemas/Carpet';
+import { CarpetImage } from './schemas/CarpetImage';
 import { User } from './schemas/User';
 import 'dotenv/config';
 import { insertSeedData } from './seed-data';
@@ -65,12 +62,9 @@ export default withAuth(
     lists: createSchema({
       // Schema items go in here
       User,
-      Product,
-      ProductImage,
-      CartItem,
-      OrderItem,
-      Order,
+      CarpetImage,
       Role,
+      Carpet,
     }),
     extendGraphqlSchema,
     ui: {
